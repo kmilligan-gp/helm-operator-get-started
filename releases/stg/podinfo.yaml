@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: stefanprodan/podinfo
-      tag: 3.1.5
+      tag: stg-9ij63o4c
     replicaCount: 2
     hpa:
       enabled: true
