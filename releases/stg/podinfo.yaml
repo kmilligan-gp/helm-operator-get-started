@@ -6,7 +6,7 @@ metadata:
   namespace: stg
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: glob:stg-*
+    filter.fluxcd.io/chart-image: 3.1.5
 spec:
   releaseName: podinfo-rc
   chart:
@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: stefanprodan/podinfo
-      tag: stg-9ij63o4c
+      tag: 3.3.1
     replicaCount: 2
     hpa:
       enabled: true
