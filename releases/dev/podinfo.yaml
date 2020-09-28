@@ -13,6 +13,10 @@ spec:
     git: git@github.com:fluxcd/helm-operator-get-started
     path: charts/podinfo
     ref: master
+  valuesFrom:
+  - secretKeyRef:
+      name: ui.message
+      key: SecureString
   values:
     image:
       repository: stefanprodan/podinfo
