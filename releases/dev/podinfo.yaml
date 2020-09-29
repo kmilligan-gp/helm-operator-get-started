@@ -16,6 +16,7 @@ spec:
   valuesFrom:
   - secretKeyRef:
       name: ui.message
+      namespace: fluxcd
       key: SecureString
   values:
     image:
