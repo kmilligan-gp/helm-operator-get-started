@@ -6,7 +6,7 @@ metadata:
   namespace: dev
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: semver:~4.0
+    filter.fluxcd.io/chart-image: semver:~5.0
 spec:
   releaseName: podinfo-dev
   chart:
